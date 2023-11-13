@@ -1,0 +1,25 @@
+<html>
+
+ <head>
+    <script>
+        fetch('https://50enzohs88.execute-api.us-east-1.amazonaws.com/Prod/put')
+            .then(() => fetch('https://50enzohs88.execute-api.us-east-1.amazonaws.com/Prod/get'))
+            .then(response => response.json())
+            .then((data) => {
+                document.getElementById('viscount').innerText = data.count
+            })
+    </script>
+ </head>
+ 
+ <body>
+    <p>
+        Hello World!!
+    </p>
+
+    <p>
+        Visitors:
+        <span id = "viscount" />
+    </p>
+</body>
+
+</html>
