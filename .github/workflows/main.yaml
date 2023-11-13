@@ -15,6 +15,6 @@ jobs:
             - name: Debug
               run: ls -R
             - name: test get-function
-              run: cd cloud-resume/get-function && go test -v ./ && cd ..
+              run: cd get-function && go test -v ./ && cd ..
             - name: test put-function
-              run: cd cloud-resume/put-function && go test -v ./ && cd ..
+              run: cd put-function && go test -v ./ && cd ..
