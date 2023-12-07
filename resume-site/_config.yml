@@ -21,7 +21,7 @@
 title: Alvis' Resume
 email: tbd@tbd.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Welcome to my website. This is the website for my AWS Cloud Resume Challenge.
+  Website for my AWS Cloud Resume Challenge.
   Check out my github repo! 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://alvisaws.net" # the base hostname & protocol for your site, e.g. http://example.com
