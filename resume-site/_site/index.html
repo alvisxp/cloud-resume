@@ -16,6 +16,14 @@
 <meta property="article:published_time" content="2023-12-06T23:06:22-05:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Alvis’ Resume" />
+<script>
+    fetch('https://50enzohs88.execute-api.us-east-1.amazonaws.com/Prod/put')
+        .then(() => fetch('https://50enzohs88.execute-api.us-east-1.amazonaws.com/Prod/get'))
+        .then(response => response.json())
+        .then((data) => {
+            document.getElementById('viscount').innerText = data.count
+        })
+</script>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"WebSite","dateModified":"2023-12-06T23:06:22-05:00","datePublished":"2023-12-06T23:06:22-05:00","description":"Website for my AWS Cloud Resume Challenge. Check out my github repo!","headline":"Alvis’ Resume","name":"Alvis’ Resume","url":"http://alvisaws.net/"}</script>
 <!-- End Jekyll SEO tag -->
@@ -82,7 +90,7 @@
 
   <div class="wrapper">
 
-    <h2 class="footer-heading">Alvis&#39; Resume</h2>
+    <h2 class="footer-heading">Visitors: <span id = "viscount"></span></h2>
 
     <div class="footer-col-wrapper">
       <div class="footer-col footer-col-1">
